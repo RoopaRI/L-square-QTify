@@ -11,5 +11,5 @@
     font-family: 'Poppins', sans-serif;
 }
 .navButton:hover{
-    cursor: pointer;
+    cursor: pointer !important;
 }
