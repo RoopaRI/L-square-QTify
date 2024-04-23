@@ -10,6 +10,7 @@
     letter-spacing: 0.25px;
     font-family: 'Poppins', sans-serif;
 }
-.navButton:hover{
-    cursor: pointer !important;
+
+.navButton{
+    cursor:pointer;
 }
