@@ -3,6 +3,6 @@ import LogoImage from "../../assests/logo.png";
 
 export default function logo(){
     return (
-        <img src={LogoImage} alt="Logo" vertical-align="center"/>
+        <img src={LogoImage} alt="Logo"/>
     );
 }
