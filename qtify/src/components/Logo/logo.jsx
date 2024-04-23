@@ -5,6 +5,6 @@ import styles from "./logo.module.css";
 
 export default function logo(){
     return (
-        <img src={LogoImage} alt="Logo"vclassName={styles.logo}/>
+        <img src={LogoImage} alt="Logo" className={styles.logo}/>
     );
 }
