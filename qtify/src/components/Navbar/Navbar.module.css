@@ -5,6 +5,6 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 74px;
-    /* padding: 0px 32px; */
+    
+    padding: 20px 0px;
 }
