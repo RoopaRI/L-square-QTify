@@ -8,12 +8,14 @@ import styles from "./HomePage.module.css";
 
 const HomePage = ({
   topAlbums,
+  newAlbums,
 }) => {
   return (
     <>
       <NavBar />
       <HeroSection />
       <Section data={topAlbums} type="top" title="Top Albums" />
+      <Section data={newAlbums} type="top" title="New Albums" />
     </>
   );
 };
