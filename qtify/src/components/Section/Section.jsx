@@ -16,7 +16,7 @@ export default function Section({ title, data, type, setCurrSong }){
         <div class={styles.header}>
           <h3>{title}</h3>
           <h4 className={styles.toggleText} onClick={handleToggle}>
-            {!toggle ? "Show All" : "Collapse All"}
+            {!toggle ? "Show All" : "Collapse"}
           </h4>
         </div>
         <Carousel
