@@ -1,7 +1,7 @@
 import styles from "./Section.module.css";
 import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
-import Card from "../Card/Card";
+import Card from "../Card/Cards";
 import Carousel from "../Carousel/Carousel";
 import { useEffect, useState } from "react";
 // import BasicTabs from "../Tabs/Tabs";
