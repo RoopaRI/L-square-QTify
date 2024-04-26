@@ -7,11 +7,25 @@ import { useState, useEffect } from "react";
 import HomePage from "./pages/HomePage/HomePage";
 
 export default function App() {
+  const [topAlbums, setTopAlbums] = useState([]);
+
+  const generateData = async () => {
+    try {
+      let res = await fetchTopAlbums();
+      setTopAlbums(res);
+    }
+    catch(err){
+      console.log(err);
+    }
+  }
+
+  useEffect(() => {
+    generateData();
+  }, []);
+
   return (
     <>
-      <Navbar />
-      <HeroSection />
-      <HomePage /> 
+      <HomePage topAlbums={topAlbums}/> 
     </>
   );
 }
