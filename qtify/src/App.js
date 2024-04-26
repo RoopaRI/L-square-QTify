@@ -9,6 +9,7 @@ import HomePage from "./pages/HomePage/HomePage";
 export default function App() {
   const [topAlbums, setTopAlbums] = useState([]);
   const [newAlbums, setNewAlbums] = useState([]);
+  const [songs, setSongs] = useState([]);
 
   const generateData = async () => {
     try {
@@ -16,6 +17,9 @@ export default function App() {
       setTopAlbums(res);
       res = await fetchNewAlbums();
       setNewAlbums(res);
+      res = await fetchSongs();
+      setSongs(res);
+      console.log("songs",res)
     }
     catch(err){
       console.log(err);
@@ -28,7 +32,7 @@ export default function App() {
 
   return (
     <>
-      <HomePage topAlbums={topAlbums} newAlbums={newAlbums}/> 
+      <HomePage topAlbums={topAlbums} newAlbums={newAlbums} songs={songs}/> 
     </>
   );
 }

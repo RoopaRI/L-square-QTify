@@ -9,13 +9,17 @@ import styles from "./HomePage.module.css";
 const HomePage = ({
   topAlbums,
   newAlbums,
+  songs,
 }) => {
   return (
     <>
       <NavBar />
       <HeroSection />
+      <div className={styles.sectionWrapper}>
       <Section data={topAlbums} type="top" title="Top Albums" />
-      <Section data={newAlbums} type="top" title="New Albums" />
+      <Section data={newAlbums} type="new" title="New Albums" />
+      <Section data={songs} type="songs" title="Songs" />
+      </div>
     </>
   );
 };

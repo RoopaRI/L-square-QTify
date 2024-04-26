@@ -1,7 +1,7 @@
 import styles from "./Carousel.module.css";
 import { Swiper, SwiperSlide, useSwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
-import card from "../Card/Cards";
+import Card from "../Card/Cards";
 import { Navigation } from "swiper/modules";
 import { useEffect } from "react";
 import CarouselLeftNavigation from "./CarouselLeftNavigation/CarouselLeftNavigation";
@@ -36,7 +36,7 @@ const Carousel = ({ data, component, type }) => {
           return (
             <SwiperSlide style={{ width: "auto" }} key={item.id}>
               {component(item)}
-              {/* <Card data={item} type={type} /> */}
+              <Card data={item} type={type} />
             </SwiperSlide>
           );
         })}
